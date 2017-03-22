@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>StoyanD &#124; Portfolio and Workflow</title>
+<link type="text/css" rel="stylesheet" href="index.css"/>
+<script type="text/javascript" src="cookies.js"></script>
+<link type="image/x-icon" rel="shortcut icon" href="icons/favicon2.ico"/>
+<meta name="keywords" content="Stoyan, StoyanD, Denkov, home, portfolio, html5, css3, javascript, jquery, transitions, animations, effects"/>
+<meta name="description" content="StoyanD's portfolio website | StoyanD's transitions and animations"/>
+<script>
+function validateForm()
+{
+var x=document.forms["stoyandForm"]["username"].value;
+if (x==null || x=="")
+  {
+  alert("Username must be filled out");
+  return false;
+  }
+}
+</script>
+</head>
+<header>
+  <ul class="wrap nav">
+    <li><a class="active" id="active" href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+<body onload="checkCookie()">
+  <div class="wrap">
+  <div class="main-col">
+    <ul class="contact"><li><a href="https://www.facebook.com/stoyan.denkov" target="_blank"></a></li></ul>
+    <ul class="contacttwo"><li><a href="https://twitter.com/fatherdwarf" target="_blank"></a></li></ul>
+      <div class="loginwrap">
+	  <div class="left-col"> 
+      <h2 style="color:white">Please fill fields below to login</h2>
+  </div><!--END LEFT-COL-->
+  <!--Begin of login form-->
+  <form name="stoyandForm" action="" onsubmit="return validateForm()" method="post">
+	<div class="login">
+		<div class="login-screen">
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" name="username" class="login-field" value="" placeholder="username" id="login-name">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="password" class="login-field" value="" placeholder="password" id="login-pass">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+				</div>
+
+				<input type="submit" value="Login" class="btn btn-primary btn-large btn-block" onsubmit="checkCookie()">
+				<a class="login-link" href="#">Lost your password?</a>
+			</div>
+		</div>
+	</div>
+	</form>
+      <!--end of login form-->
+</div>
+  </div> <!--END MAIN-COL-->
+  </div><!--END WRAP-->
+</body>
+<footer>
+  <div id="footer">
+      <p id="cr">&#169; Copyright 2013 StoyanD</p>
+  </div>
+</footer>
+</html>

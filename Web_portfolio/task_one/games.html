@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>StoyanD &#124; Game of 15</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link type="text/css" rel="stylesheet" href="games.css"/>
+<script type="text/javascript" src="games.js"></script>
+<link type="image/x-icon" rel="shortcut icon" href="../icons/favicon.ico"/>
+<meta name="keywords" content="Stoyan, StoyanD, Denkov, game of 15, portfolio, html5, css3, javascript, jquery, transitions, animations, effects"/>
+<meta name="description" content="StoyanD's portfolio website | StoyanD's transitions and animations"/>
+</head>
+<body>
+  <div id="btn-game1" style="text-align:center;">Puzzle Game</div>
+    <table id="table1">
+  <tr id="tr1">
+    <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content1" draggable="true" ondragstart="drag(event)"><p id="p1">1</p></div></td>
+    <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content2" draggable="true" ondragstart="drag(event)"><p id="p1">2</p></div></td>
+    <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content3" draggable="true" ondragstart="drag(event)"><p id="p1">3</p></div></td>
+    <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content4" draggable="true" ondragstart="drag(event)"><p id="p1">4</p></div></td>
+  </tr>
+    <tr id="tr2">
+      <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content5" draggable="true" ondragstart="drag(event)"><p id="p1">5</p></div></td>
+      <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content6" draggable="true" ondragstart="drag(event)"><p id="p1">6</p></div></td>
+      <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content7" draggable="true" ondragstart="drag(event)"><p id="p1">7</p></div></td>
+      <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content8" draggable="true" ondragstart="drag(event)"><p id="p1">8</p></div></td>
+    </tr>
+    <tr id="tr3">
+      <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content9" draggable="true" ondragstart="drag(event)"><p id="p1">9</p></div></td>
+      <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content10" draggable="true" ondragstart="drag(event)"><p id="p1">10</p></div></td>
+      <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content11" draggable="true" ondragstart="drag(event)"><p id="p1">11</p></div></td>
+      <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content12" draggable="true" ondragstart="drag(event)"><p id="p1">12</p></div></td>
+    </tr>
+  <tr id="tr4">
+    <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content13" draggable="true" ondragstart="drag(event)"><p id="p1">13</p></div></td>
+    <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content14" draggable="true" ondragstart="drag(event)"><p id="p1">14</p></div></td>
+    <td class="divdrag" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div_content15" draggable="true" ondragstart="drag(event)"><p id="p1">15</p></div></td>
+    <td id="divdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+  </tr>
+  </table>
+  
+  <div id="btn-game2" style="text-align:center;">Game of 15</div>  
+<div id="game">
+<table class="board">
+  <tr>
+    <td id="box0" onclick="checkBoard(0,0);">1</td>
+    <td id="box1" onclick="checkBoard(0,1);">2</td>
+    <td id="box2" onclick="checkBoard(0,2);">3</td>
+    <td id="box3" onclick="checkBoard(0,3);">4</td>
+    </tr>
+  <tr>
+    <td id="box4" onclick="checkBoard(1,0);">5</td>
+    <td id="box5" onclick="checkBoard(1,1);">6</td>
+    <td id="box6" onclick="checkBoard(1,2);">7</td>
+    <td id="box7" onclick="checkBoard(1,3);">8</td>
+  </tr>
+  <tr>
+    <td id="box8" onclick="checkBoard(2,0);">9</td>
+    <td id="box9" onclick="checkBoard(2,1);">10</td>
+    <td id="box10" onclick="checkBoard(2,2);">11</td>
+  	<td id="box11" onclick="checkBoard(2,3);">12</td>
+  </tr>
+	<tr>
+		<td id="box12" onclick="checkBoard(3,0);">13</td>
+		<td id="box13" onclick="checkBoard(3,1);">14</td>
+		<td id="box14" onclick="checkBoard(3,2);">15</td>
+ 		<td id="box15" onclick="checkBoard(3,3);"></td>
+  </tr>
+</table>
+  <div id="output">
+<button id="scramble" onclick="scrambleAll();">Scramble</button>
+  <br />
+<pre id="debugg"></pre>
+  </div>
+</div>
+<div id="centerimg">
+<img id="stoyand" src="../images/StoyanD_logo.png" alt="logo"/>
+</div>
+</body>
+</html>

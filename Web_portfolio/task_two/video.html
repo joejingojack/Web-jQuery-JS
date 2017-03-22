@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StoyanD &#124; HTML5 Videos</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <!-- My file storage -->
+        <link type="text/css" rel="stylesheet" href="video.css"/>
+        <script type="text/javascript" src="video.js"></script>
+        <link type="image/x-icon" rel="shortcut icon" href="../icons/favicon2.ico"/>
+        <meta name="keywords" content="Stoyan, StoyanD, Denkov, videos, songs, tracks, portfolio, html5, css3, javascript, jquery, transitions, animations, effects"/>
+        <meta name="description" content="StoyanD's portfolio website | StoyanD's transitions and animations"/>
+    </head>
+		    
+    <body>
+
+      <section>
+    <div id="container">
+  <ul id="nav">
+		<li><a href="iframe.html">IFRAME</a></li>
+		<li><a href="video.html">VIDEO</a></li>
+	</ul>
+</div>
+      </section>
+      
+        <div id="myContainer" style="text-align:center;">
+            <div id="menu">
+                <button id="button1" title="SAIL - AWOLNATION" style="cursor:pointer" onclick="playPause(); return false;">Play/Pause</button>
+                <button id="button1" onclick="makeBig(); return false;">Enlarge</button>
+                <button id="button1" onclick="makeSmall(); return false;">Shrink</button>
+                <button id="button1" onclick="makeNormal(); return false;">Default</button>
+                </div>
+                <video id="video1" height="250" width="500" poster="../images/track1_poster.jpg" preload="none">
+                    <source src="https://copy.com/fJ4s2WuiSbTR/track1.mp4" type="video/mp4"/>
+                    <source src="https://copy.com/vjGw3UAMaDXQ/track1.ogv" type="video/ogg"/>
+                </video>
+        </div>
+        <script type="text/javascript" src="video.js"></script>
+      <div id="slider">
+        <input type="range" id="mySlider" title="Width" min="100" max="500" step="50" value="0" onchange="document.getElementById('video1').width = this.value;" />
+        <input type="range" title="Height" min="100" max="350" step="50" id="mySlider" value="0" onchange="document.getElementById('video1').height = this.value;" />
+  </div>
+        <div id="myContainer2" style="text-align:center;">
+            <div id="menu2">
+                <button id="button2" title="Dj Sandro Escobar And Dj Max Payne Feat. Katrin Queen - My Feelin" style="cursor:pointer" onclick="playPause2(); return false;">Play/Pause</button>
+                <button id="button2" onclick="makeBig2(); return false;">Enlarge</button>
+                <button id="button2" onclick="makeSmall2(); return false;">Shrink</button>
+                <button id="button2" onclick="makeNormal2(); return false;">Default</button>
+                </div>
+                <video id="video2" height="300" width="600" poster="../images/track2_poster.jpg" preload="none">
+                    <source src="https://copy.com/cyFKWRQ824XU/track2.mp4" type="video/mp4"/>
+                    <source src="https://copy.com/xSvA8Olulgci/track2.ogv" type="video/ogg"/>
+                </video>
+        </div>
+        <script type="text/javascript" src="video.js"></script>
+      <div id="slider2">
+        <input type="range" id="mySlider2" title="Width" min="100" max="550" step="50" value="0" onchange="document.getElementById('video2').width = this.value;" />
+        <input type="range" title="Height" min="100" max="450" step="50" id="mySlider2" value="0" onchange="document.getElementById('video2').height = this.value;" />
+      </div>
+    </body>
+
+</html>

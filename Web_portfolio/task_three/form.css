@@ -1,0 +1,53 @@
+body{  background-color: #cecece;font-family:"Trebuchet MS", Helvetica, sans-serif; font-weight: lighter;}
+
+.headContainer{margin:0 auto;width:440px;}
+.formContainer{
+margin:0 auto;
+width:440px;;
+padding-bottom:50px;
+padding-top:30px;}
+
+
+#spanBust{visibility:hidden;}
+#spanIban{visibility:visible;}
+
+#mess,#mess2,#mess3{font-weight:bold;color:#191919;}
+
+input[type="submit"] {width:200px;padding:10px;}
+input[type="submit"]:hover{background-color:#b8b8b8;cursor:pointer;}
+#btn{background-color:#eee;}
+#btn:hover{cursor:pointer;}
+#btn:active{background-color:#d6d6d6;}
+
+h1,h3,h4,h5{color:#1a1a1a;}
+p{font: 14px bold Tahoma, Arial, sans-serif;}
+#spanTime{text-shadow:1px 1px 8px #666;}
+#spanDate{text-shadow:3px 3px 10px #808080;}
+h1,h3,h4{-webkit-text-stroke: 0.5px #e6e6e6;}
+
+form, br {
+    clear: left;
+    margin: 0;
+    padding: 0;
+}
+
+label, input {
+    width: 160px;
+    float: left;
+    font: 11px bold Tahoma, Arial, sans-serif;
+    margin: 1px;
+    padding: 2px;
+}
+
+label {
+    font: 14px bold Tahoma, Arial, sans-serif;
+    background: #eeeeee;
+    color:#191919;
+}
+
+input {
+    width: 200px;
+    padding: 2px;
+    border: 1px solid #aaa;
+}
+

@@ -1,0 +1,270 @@
+body{
+background-image:url('images/site_background.jpg');
+ background-position:center center;
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+}
+
+html, body, ul, li, a, p, article, figure, img, div, section{
+  margin: 0;
+  padding: 0;
+  list-decoration: none;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+  margin:0 auto;
+  width: 80%;
+  background: #005C99;
+  padding: 0;
+  height: 148px;
+  margin-top: 64px;
+  margin-bottom: 44px;
+  box-shadow: 0px 4px 10px -3px #cecece inset
+}
+
+
+ul.nav{
+  position:absolute;
+  margin-left: 0px;
+  height: 148px;
+}
+
+.nav li{
+  display: inline-block;
+  color: white;
+  margin-right: -4.2px;
+  width: 25%;
+  max-width: 330px;
+  height: 100%;
+  transition: background 0.7s;
+}
+
+.nav li:hover{
+  background: #0099ff;
+}
+
+.active{
+  background: #0099ff;
+}
+#active{
+  color: #ffffff;
+}
+
+.nav li a{
+  display: inline-block;
+  padding: 65px 0;
+  width: 100%;
+  text-align: center;
+  color: #B2B2B2;
+  text-transform: uppercase;
+  font-weight: light;
+  letter-spacing: 0.2em;
+  font-size: 24px;
+}
+
+.nav li a:hover{
+  color: #005C99;
+}
+
+.nav li.active{
+  box-shadow: 0 -5px 0 0 #0099ff inset
+}
+
+.wrap{
+  width: 80%;
+  margin: 0 auto;
+}
+.main-col{
+  position:absolute;
+  margin-top:-44px;
+  float:right;
+  height:500px;
+  width:80%;
+  background-color:#0099ff;
+}
+/*------------------LOGIN FORM------------------*/
+* {
+box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+.login {  
+margin:0 auto;
+position:absolute;
+margin-top:4%;
+width:30%;
+}
+.login-screen {
+margin:0 auto;
+margin-left:120%;
+position:absolute;
+margin-top:150px;
+background-color: #FFF;
+padding: 20px;
+}
+
+.login-form {
+text-align: center;
+}
+.control-group {
+margin-bottom: 10px;
+}
+
+input {
+text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+width: 250px;
+transition: border .5s;
+}
+
+input:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+.btn {
+  border: 2px solid transparent;
+  background: #3498DB;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #2980B9;
+  cursor:pointer;
+}
+
+.login-link {
+  font-size: 12px;
+  color: #444;
+  display: block;
+  margin-top: 12px;
+}
+.login-link:hover{text-decoration:underline;}
+/*---------------------END----------------------*/
+.loginwrap{margin:0 auto;width:1000px;position:relative;margin-top:-80px;}
+
+.left-col{
+  height:20px;
+  padding: 10px 10px 10px 10px;
+  position:absolute;
+  margin:0 auto;
+  margin-top:15%;
+  margin-left:36%;
+  background-color:#0099ff;
+  border:solid #fff;
+  border-width: 0 3px;
+}
+.left-col:hover{
+  border:solid 	#003D5C;
+  border-width: 0 3px;
+}
+h2{
+  margin-top:-10px;
+  font-size:20px;
+  text-align:center;
+  font-weight: normal;
+  color:#cecece;
+}
+
+
+#footer{
+  position:absolute;
+  margin-left:10%;
+  margin-top:445px;
+  height:60px;
+  width:80%;
+  background-color:#005C99;
+}
+
+
+
+#cr{
+  position:relative;
+  color:#ffffff;
+  opacity:0.6;
+  text-align:center;
+  margin-top:1.52%;
+}
+
+ul.contact{
+  float:right;
+  position:absolute;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  height: 250px;
+}
+ul.contacttwo{
+  margin-top:245px;
+  float:left;
+  width: 100%;
+  margin: 0;
+  height: 245px;
+}
+.contact li{ 
+  float:right;
+  position:relative;
+  display: inline-block;
+  border-bottom-right-radius: 15px;
+  width: 5%;
+  margin-right: 0px;
+  margin-bottom: -1%;
+  background: #005c99;
+  height: 250px;
+  transition: background 0.6s;
+}
+.contacttwo li{ 
+  margin-top:250px;
+  float:left;
+  position:absolute;
+  display: inline-block;
+  border-top-left-radius: 15px;
+  width: 5%;
+  background: #005c99;
+  height: 245px;
+  transition: background 0.6s;
+}
+.contact li a{
+  float:right;
+  position:relative;
+  display: block;
+  height: 100%;
+  width: 112.5%;
+  text-align: center;
+  background: url('images/facebook.png') no-repeat center center;
+}
+.contacttwo li a{
+  float:left;
+   position:relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: url('images/twitter.png') no-repeat center center;
+}
+.contact li:hover{
+  background: #0099ff;
+}
+.contacttwo li:hover{
+  background: #0099ff;
+}

@@ -1,0 +1,76 @@
+body{
+  background:Silver;
+  width:100%;height:100%;
+  margin:0;padding:0;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 0 0 20px #fff;
+  -webkit-text-stroke: .5px Silver;
+}
+
+.fade { position:relative; height:100%; width:100%; }
+.fade img { position:absolute; left:0; top:0; }
+#frame{
+  position:relative;
+  padding:20px;
+  border:1px solid #fff;
+  margin:30px auto;
+  background:#ddd linear-gradient(-45deg, #fff,#ddd,#fff);
+  border-radius:7px;
+  box-shadow: 0 16px 10px -16px #555,
+              0 0 0 1px #ddd;
+  width:400px;
+  height:400px;
+}
+
+#textform{
+  position:relative;
+  border:1px solid #fff;
+  margin: -25px auto;
+  margin-bottom:80px;
+  background:#ddd linear-gradient(-45deg, #fff,#ddd,#fff);
+    box-shadow: 0 16px 10px -10px #555,
+              0 0 0 1px #ddd;
+  border-radius:0px;
+  width:400px;
+}
+
+form[name=stoyand]{
+  text-align:center;
+}
+input[type=text]:focus{
+  background:Lavender;
+}
+
+.imgwrap{
+  width:100%;
+  height:100%;
+  padding:0 0 0 3px;
+}
+
+img{
+  width: 390px;
+  height: 390px;
+  border-radius:5px;
+  box-shadow: 0 0 0 1px #fff;
+  border:1px solid #eee;
+  transition:width .25s ease-in-out, height .25s ease-in-out, margin .25s ease-in-out;
+      -webkit-transition:width .25s ease-in-out, height .25s ease-in-out, margin .25s ease-in-out;
+      -moz-transition:width .25s ease-in-out, height .25s ease-in-out, margin .25s ease-in-out;
+      -o-transition:width .25s ease-in-out, height .25s ease-in-out, margin .25s ease-in-out;
+      -ms-transition:width .25s ease-in-out, height .25s ease-in-out, margin .25s ease-in-out;
+}
+
+img:hover{
+  width: 405px;
+  height: 405px;
+  box-shadow: 0 12px 6px -6px #666,0 0 3px 0 #ccc;
+  margin: -1% 0% 0% -1.5%;
+  border-radius:7px;
+  CURSOR:pointer;
+}

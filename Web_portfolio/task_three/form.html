@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StoyanD Common Forms</title>
+	<link type="text/css" rel="stylesheet" href="form.css"/>	
+  </head>
+  <header>
+    <div class="headContainer">
+        <h1>StoyanD Common Forms</h1>
+    <h3>Current date: <span id="spanDate"></span></h3>
+    <h4>The time is now: <span id="spanTime"></span></h4><br>	
+    </div>
+	<script type="text/javascript" src="form.js"></script>
+  </header>
+<body>
+<div class="formContainer">
+<p>Check if you are old enough to vote by clicking in the button below</p>
+  <label for="age">Age: </label>
+  <input id="age" value="18" />
+<button id="btn" onclick="ageFunction()">Check</button>
+  <p id="btnp"></p>
+  
+    <h5>Please enter your name below</h5>
+  <form name="textForm">
+    <label for="name">First name:</label>
+    <input type="text" name="fname" id="name">
+</form><br>
+  
+  <h5>Please enter your e-mail below</h5>
+  <form name="mailForm">
+    <label for="email">Email:</label> 
+    <input type="email" name="email" id="email">
+</form>
+  
+  <br></br><label for="date">Enter a date before you started studying web:</label>
+  <input type="date" name="bday" id="date" max="2013-09-30"><br></br><label for="date">Enter the current date:</label>
+  <input type="date" name="bday" id="date" min="2013-12-12"><br></br><label for="quantity">Rate your programming knowledge (between 1 and 6):</label>
+  <input type="number" name="quantity" id="quantity" min="1" max="6">
+
+<br></br><h5>Check what gender you are :D</h5>
+<form name="myForm" action="">
+  <label for="male">Male</label>
+  <input onchange="genderCheck()" type="checkbox" checked="checked" name="sex" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input onchange="genderCheck()" type="checkbox" name="sex" id="female" value="female">
+<br>
+    <span id="spanIban">
+    <label for="iban">IBAN:</label>
+        <input type="text" onchange="ibanAlert();" name="mIban" id="iban" maxlength="22"/>
+    </span>
+    <br>
+    <span id="spanBust">
+        <label for="bust">Bust:</label>
+        <input type="text" name="fBust" id="bust" placeholder="in centimetres" />
+    </span>
+  <br></br><label for="height">Your height:</label>
+        <input type="text" placeholder="in centimetres" name="personHeight" id="height" />
+  <br></br><label for="week">Select week:</label>
+        <input type="week" name="year_week" id="week" />
+<br></br><input onclick="return processValidate(event);" type="submit" value="Submit all" id="submit" method="post" formaction="mailto:rooney_09@abv.bg" formtarget="_blank"/><br></br>
+  <p id="mess"></p>
+  <p id="mess2"></p>
+  <p id="mess3"></p>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{width:99%;}
+
+#stoyand{
+  height:150px;
+  width:150px;
+  margin-top:197.4px;
+  margin-bottom:200px;
+  position:relative;
+  opacity:0.3;
+  background-repeat:no-repeat;
+}
+
+#centerimg{margin:0 auto;width:100px;}
+
+canvas {
+  outline: dotted 1px blue;
+  position:relative;
+  margin-bottom:-14px;
+}
+
+button{
+  padding:11px;
+  border: dashed 1px blue;
+  background-color:#0099ff;
+}
