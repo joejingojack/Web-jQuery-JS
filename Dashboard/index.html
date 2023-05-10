@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Табло за управление на задачите</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="task-manager">
+      <!-- left bar starts -->
+      <div class="left-bar">
+
+
+        <!-- left content starts -->
+        <div class="left-content">
+          <ul class="action-list">
+            <li class="item">
+              <img class="feather feather-inbox" src="svg/inbox.svg" alt="" />
+              <span>Входяща поща</span>
+            </li>
+            <li class="item">
+              <img class="feather feather-star" src="svg/star.svg" alt="" />
+              <span> Днешни задачи
+            <li class="item">
+              <img class="feather feather-calendar" src="svg/calender.svg" alt="" />
+              <span>Следващи</span>
+            </li>
+            <li class="item">
+              <img class="feather feather-hash" src="svg/important.svg" alt="" />
+              <span>Важно</span>
+            </li>
+            <li class="item">
+              <img class="feather feather-users" src="svg/users.svg" alt="" />
+              <span>Срещи</span>
+            </li>
+            <li class="item">
+              <img class="feather feather-trash" src="svg/trash.svg" alt="" />
+              <span>Кошче</span>
+            </li>
+          </ul>
+
+          <ul class="category-list">
+            <li class="item">
+              <img class="feather feather-users" src="svg/group.svg" alt="" />
+              <span>Група</span>
+            </li>
+            <li class="item">
+              <img class="feather feather-sun" src="svg/sun.svg" alt="" />
+              <span>Почивка</span>
+            </li>
+            <li class="item">
+              <img class="feather feather-trending-up" src="svg/trending.svg" alt="" />
+              <span>Тенденция</span>
+            </li>
+            <li class="item">
+              <img class="feather feather-zap" src="svg/zap.svg" alt="" />
+              <span>Концерти</span>
+            </li>
+          </ul>
+        </div>
+        <!-- left content ends -->
+      </div>
+      <!--  -->
+      <!-- left bar ends -->
+
+      <!-- page content starts -->
+      <div class="page-content">
+        <div class="header"><center>Днешни задачи</center></div>
+        <!-- contnet categories starts -->
+        <div class="content-categories">
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-1" />
+            <label class="category" for="opt-1">Всички</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-2" checked />
+            <label class="category" for="opt-2">Важни</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-3" />
+            <label class="category" for="opt-3">Бележки</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-4" />
+            <label class="category" for="opt-4">Други</label>
+          </div>
+        </div>
+        <!--  -->
+        <!-- contemt categories ends -->
+        <!-- tasks wrapper starts -->
+        <div class="tasks-wrapper">
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-1" checked />
+            <label for="item-1">
+              <span class="label-text">Създаване на табло за задачи</span>
+            </label>
+            <span class="tag approved">Одобрен</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-2" checked />
+            <label for="item-2">
+              <span class="label-text">Интерактивен дизайн</span>
+            </label>
+            <span class="tag progress">В процес</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-3" />
+            <label for="item-3">
+              <span class="label-text">Изпълнение на таблото за задачи</span>
+            </label>
+            <span class="tag review">В рецензия</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-4" checked />
+            <label for="item-4">
+              <span class="label-text">Създаване на дизайн</span>
+            </label>
+            <span class="tag progress">В процес</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-5" checked />
+            <label for="item-5">
+              <span class="label-text">Създаване на дизайн за уеб приложение</span>
+            </label>
+            <span class="tag approved">Одобрен</span>
+          </div>
+          <div class="header upcoming"><center>Предстоящи задачи</center></div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-6" checked/>
+            <label for="item-6">
+              <span class="label-text">Изпълнение на дизайна на таблото за задачи</span>
+            </label>
+            <span class="tag waiting">В изчакване</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-7" />
+            <label for="item-7">
+              <span class="label-text">Създаване на потребителска база</span>
+            </label>
+            <span class="tag waiting">В изчакване</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-8" />
+            <label for="item-8">
+              <span class="label-text">Осъществяване на приложението</span>
+            </label>
+            <span class="tag waiting">В изчакване</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-9" />
+            <label for="item-9">
+              <span class="label-text">Сортиране на масива от задачи</span>
+            </label>
+            <span class="tag waiting">В изчакване</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-10" />
+            <label for="item-10">
+              <span class="label-text">Създаване на допълнителен интерфейс</span>
+            </label>
+            <span class="tag waiting">В изчакване</span>
+          </div>
+        </div>
+        <!-- tasks wrapper ends -->
+      </div>
+      <!--  -->
+      <!-- page content ends -->
+
+      <!-- right bar starts -->
+      <div class="right-bar">
+        <div class="top-part">
+          <img class="feather feather-users" src="svg/users.svg" alt="" />
+          <div class="count">9</div>
+        </div>
+        <div class="header">Програма / График</div>
+        <div class="right-content">
+          <div class="task-box yellow">
+            <div class="description-task">
+              <div class="time">08:00 - 09:00 AM</div>
+              <div class="task-name">Среща на екипа</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="mems">
+              <img src="images/img-01.jpg" alt="mem" />
+              <img src="images/img-02.jpg" alt="mem-2" />
+              <img src="images/img-03.jpg" alt="mem-3" />
+              <img src="images/img-04.jpg" alt="mem-4" />
+            </div>
+          </div>
+          <div class="task-box blue">
+            <div class="description-task">
+              <div class="time">9:00 - 10:00 AM</div>
+              <div class="task-name">Изявление относно дизайна</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="mems">
+              <img src="images/img-05.jpg" alt="mem" />
+              <img src="images/img-06.jpg" alt="mem-2" />
+              <img src="images/img-07.jpg" alt="mem-3" />
+            </div>
+          </div>
+          <div class="task-box red">
+            <div class="description-task">
+              <div class="time">01:00 - 02:00 PM</div>
+              <div class="task-name">Цялостен обзор</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="mems">
+              <img src="images/img-01.jpg" alt="mem" />
+              <img src="images/img-02.jpg" alt="mem-2" />
+              <img src="images/img-03.jpg" alt="mem-3" />
+              <img src="images/img-04.jpg" alt="mem-4" />
+            </div>
+          </div>
+          <div class="task-box green">
+            <div class="description-task">
+              <div class="time">02:00 - 03:00 PM</div>
+              <div class="task-name">Преразглеждане на крайния продукт</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="mems">
+              <img src="images/img-05.jpg" alt="mem" />
+              <img src="images/img-06.jpg" alt="mem-2" />
+              <img src="images/img-07.jpg" alt="mem-3" />
+              <img src="images/img-08.jpg" alt="mem-4" />
+              <img src="images/img-09.jpg" alt="mem-5" />
+            </div>
+          </div>
+          <div class="task-box blue">
+            <div class="description-task">
+              <div class="time">08:00 - 09:00 PM</div>
+              <div class="task-name">Комюнике</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="mems">
+              <img src="images/img-05.jpg" alt="mem" />
+              <img src="images/img-06.jpg" alt="mem-2" />
+              <img src="images/img-07.jpg" alt="mem-3" />
+              <img src="images/img-08.jpg" alt="mem-4" />
+              <img src="images/img-09.jpg" alt="mem-5" />
+            </div>
+          </div>
+          <div class="task-box yellow">
+            <div class="description-task">
+              <div class="time">11:00 - 12:00 PM</div>
+              <div class="task-name">Крайна дискусия</dюiv>
+            </div>
+            <div class="more-button"></div>
+            <div class="mems">
+              <img src="images/img-01.jpg" alt="mem" />
+              <img src="images/img-02.jpg" alt="mem-2" />
+              <img src="images/img-03.jpg" alt="mem-3" />
+              <img src="images/img-04.jpg" alt="mem-4" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right bar ends -->
+    </div>
+  </body>
+</html>
